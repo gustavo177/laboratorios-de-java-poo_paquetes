@@ -7,8 +7,12 @@ public class EjemploPaquetes {
         p.nombre = "Gustavo";
         System.out.println(p.nombre);
 
-        Gato g = new Gato();
-        g.nombre = "michi";
-        System.out.println(g.nombre);
+        Perro perro = new Perro();
+
+        perro.nombre = "Tobias";
+        perro.raza = "Golden";
+
+        System.out.println("perro.nombre = " + perro.nombre);
+        System.out.println("perro.raza = " + perro.raza);
     }
 }
