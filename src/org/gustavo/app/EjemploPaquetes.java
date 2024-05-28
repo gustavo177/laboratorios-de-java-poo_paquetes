@@ -12,6 +12,10 @@ public class EjemploPaquetes {
         perro.nombre = "Tobias";
         perro.raza = "Golden";
 
+        perro.nombre = "Stuar";
+        perro.raza = "Golden";
+
+
         System.out.println("perro.nombre = " + perro.nombre);
         System.out.println("perro.raza = " + perro.raza);
     }
