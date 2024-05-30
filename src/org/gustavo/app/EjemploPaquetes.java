@@ -11,8 +11,10 @@ public class EjemploPaquetes {
 
         perro.nombre = "Tobias";
         perro.raza = "Golden";
+        perro.anioNacimiento=2022;
 
         System.out.println("perro.nombre = " + perro.nombre);
         System.out.println("perro.raza = " + perro.raza);
+        System.out.println("perro.anioNacimiento = " + perro.anioNacimiento);
     }
 }
