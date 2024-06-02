@@ -3,7 +3,35 @@ package org.gustavo.app.hogar;
 import java.util.Date;
 
 public class Persona {
-    public String nombre;
-    public String apellido;
-    public Date fecha;
+    private String nombre;
+    private String apellido;
+    private Date fecha;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
+
+    public  String lanzarPelota(){
+        return "lanza la pelota al perro!";
+    }
 }

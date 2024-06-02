@@ -1,4 +1,4 @@
-package org.gustavo.app;
+package org.gustavo.app.jardin;
 
 import org.gustavo.app.hogar.*;
 
@@ -8,13 +8,13 @@ import java.text.SimpleDateFormat;
 public class EjemploPaquetes {
     public static void main(String[] args) {
         Persona p = new Persona();
-        p.nombre = "Gustavo";
-        System.out.println(p.nombre);
+        p.setNombre("Gustavo");
+        System.out.println(p.getNombre());
 
         SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yy");
         try {
-            p.fecha = formatter.parse("10-05-22");
-            System.out.println("Fecha de nacimiento: " + p.fecha );
+            p.setFecha(formatter.parse("10-05-22"));
+            System.out.println("Fecha de nacimiento: " + p.getFecha() );
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -23,6 +23,9 @@ public class EjemploPaquetes {
         perro.nombre = "Tobias";
         perro.raza = "Golden";
         perro.anioNacimiento = 2022;
+
+        String jugando = perro.jugar(p);
+        System.out.println("jugando = " + jugando);
 
         System.out.println("perro.nombre = " + perro.nombre);
         System.out.println("perro.raza = " + perro.raza);
