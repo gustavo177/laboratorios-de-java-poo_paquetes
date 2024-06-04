@@ -9,6 +9,7 @@ public class Perro {
 
     String jugar(Persona persona){
         return persona.lanzarPelota();
+
     }
 
 }
