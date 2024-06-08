@@ -14,7 +14,7 @@ public class EjemploPaquetes {
         Persona p = new Persona();
         p.setNombre("Gustavo");
         p.setApellido("Bautista");
-        p.setColorPelo(NEGRO);
+        p.setColorPelo(CASTANIO);
 
         System.out.println(p.getNombre());
 
